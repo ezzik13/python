@@ -5,23 +5,18 @@ import os
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
 cls()
+
 k = int(input('Введите число: ')) + 1
 def fib(n):
     if n in [1, 2]:
         return 1
-    else:
+    elif n > 2:
         return fib(n-1) + fib(n-2)
-
-def fib2(n):
-    if n in [1, 2]:
-        return 1
-    else:
-        return fib2(n + 2) - fib2(n + 1)
+    elif n < 1:
+        return fib(n + 2) - fib(n + 1)
 
 lst1 = []
-for i in range(1, k):
+for i in range(-k, k):
     lst1.append(fib(i))
-for i in range(0, -k, -1):
-    lst1.insert(0, fib2(i))
 
 print(lst1) 
