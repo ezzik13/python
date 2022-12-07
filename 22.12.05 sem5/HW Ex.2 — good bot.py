@@ -30,8 +30,11 @@ print(f'На Вашем столе {x} конфета, Вы можете за 1 
 
 while x > 0:
     if hod == 0:
-        i = int(input(f'Ваш ход {player_1}, введите сколько конфет Вы забираета(от 1 до {max_hod}): '))
-        if i < 1 or i > 28: i = 28
+        i = input(f'Ваш ход {player_1}, введите сколько конфет Вы забираета(от 1 до {max_hod}): ')
+        if int(i) < 1 or int(i) > 28:
+             i = 28
+        else:
+            i = int(i)
         x = x - i
         hod = 1
         cls()
