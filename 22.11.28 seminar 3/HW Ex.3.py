@@ -16,12 +16,12 @@ for i in range(len(lst1)):
         lst1[i] = round((lst1[i] - int(lst1[i])), 2)
 
 print(lst1)
-max = 0
-min = 1
+max1 = 0
+min1 = 1
 
 for i in lst1:
-    if i > max:
-        max = i
-    if i < min:
-        min = i
-print(max - min)
+    if i > max1:
+        max1 = i
+    if i < min1:
+        min1 = i
+print(max1 - min1)

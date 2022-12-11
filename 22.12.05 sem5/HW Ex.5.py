@@ -8,3 +8,13 @@ import os
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
 cls()
+
+lst = [1, 5, 2, 3, 4, 6, 1, 7]
+# lst1 = [lst[0]]
+# for i in lst:
+#     if i > lst1[-1]:
+#         lst1.append(i)
+
+def f(lst: list):
+    
+print(lst1)

@@ -50,3 +50,35 @@ while x > 0:
             print(f'Все конфеты достаются {player_2}')
 
 
+# from random import randint
+ 
+# CANDIES = 2022
+# MAX_STEP = 28
+ 
+# human = True
+# cur_candies = CANDIES
+ 
+ 
+# def get_ai_step():
+#     return randint(1, min(MAX_STEP, cur_candies))
+ 
+ 
+# def get_human_step():
+#     while True:
+#  cnt = input('Введите количество конфет: ')
+#         if cnt.isdigit() and  1 <= int(cnt) <= min(MAX_STEP, cur_candies):
+#             ( int(cnt)
+#         print('Введено некорректное значение')
+ 
+ 
+# while cur_candies:
+#     if human:
+#  cur_candies -= get_human_step()
+#     else:
+#  cur_candies -= get_ai_step()
+#  human = not human
+ 
+# if human:
+#     print('Победил БОТ')
+# else:
+#     print('Победил человек')
