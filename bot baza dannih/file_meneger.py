@@ -27,8 +27,7 @@ def on_display1():      # выводит в столбик
             print(j)
         print()
 
-def import_data():
-    data_file1 = input('Введите наименование файла с расширением: ')
+def import_data(data_file1):    
     new_lst = codecs.open(f'{data_file1}', "r", encoding='utf-8').read()
     new_lst = list(new_lst.split('\r\n'))
     for x, y in enumerate(new_lst):

@@ -1,5 +1,5 @@
-from file_meneger import on_display
 from file_meneger import new_str
+from file_meneger import import_data
 import os
 os.chdir(os.path.dirname(__file__))
 from telebot import TeleBot, types
@@ -76,6 +76,11 @@ def answer3(msg: types.Message):
     with open(filename, 'wb') as file:
         file.write(bot.download_file(bot.get_file(msg.document.file_id).file_path))
     bot.send_message(chat_id=msg.from_user.id, text='Вывожу логыыыы')
+    import_data(filename)
+    if os.path.isfile(filename):
+         os.remove(filename) 
+         print("success") 
+    else: print("File doesn't exists!")
 
 # def on_display1():      # выводит в столбик
 #     str1 = codecs.open("tel_book.txt", "r", encoding='utf-8').read()
